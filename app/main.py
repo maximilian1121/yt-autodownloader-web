@@ -31,6 +31,7 @@ def run_spotdl_download_cli(url):
     command = [
         "spotdl",
         "--bitrate", "320k",
+        "--format", "wav",
         "--output", os.path.expanduser("~/Music"),
         url
     ]
