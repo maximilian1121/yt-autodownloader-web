@@ -25,7 +25,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ github.run_number }}
-          name: Auto Release ${{ github.run_number }}
+          name: Release V${{ github.run_number }}
           files: |
             bundled.zip
         env:

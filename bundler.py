@@ -17,6 +17,7 @@ with open(repo_name, 'w') as outfile:
 with zipfile.ZipFile('bundled.zip', 'w', compression=zipfile.ZIP_DEFLATED) as my_zip:
     my_zip.write(bundle_path, arcname=bundle_path)
     my_zip.write(repo_name, arcname=repo_name)
+    my_zip.write('requirements.txt', arcname='requirements.txt')
     
     # Recursively add the entire folder with all files
     for foldername, subfolders, filenames in os.walk(f"app"):
