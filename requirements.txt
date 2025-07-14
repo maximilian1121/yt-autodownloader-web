@@ -1,0 +1,3 @@
+spotDL
+yt-dlp
+Flask
